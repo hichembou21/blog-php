@@ -1,0 +1,292 @@
+a {
+    color:rgb(5, 5, 39); 
+    margin:10px 10px;
+}
+
+.title {
+    color: #170355;
+    font-family: 'Poppins', sans-serif;
+    padding: 50px 10px;
+    text-align: center;
+}
+
+.corp {
+    width: 100%;
+    background-image: url('/img/background3.jpg');
+}
+
+.container-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-up {
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+    /* margin: 40px 10%; */
+    background-image: url('/img/background2.jpg');
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+    
+}
+
+.update-user {
+    display: flex;
+    width: 75%;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+    /* margin: 40px 10%; */
+    background-image: url('/img/background2.jpg');
+}
+
+.detail-user {
+    width: 25%;
+}
+
+.action-user {
+    flex-grow : 2; 
+}
+
+.presentation {
+    font-family: PT Sans,sans-serif;
+    justify-content: center;
+    padding: 10px 0 10px 1%;
+    /* border-top: 1px dashed #c9c9c9; */
+}
+
+.presentation-blog {
+    width: 80%;
+    font-family: PT Sans,sans-serif;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 10px 0 10px 5%;
+    border-top: 2px dashed #080808;
+}
+
+.article-title {
+    background-color: #aaa6b9;
+}
+
+.article-content {
+    text-align: justify;
+}
+
+.field-inscription {
+    margin-left: 15%;
+    border: 1px solid #7e7b7b;
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px #000000;        
+}
+
+.field-add {
+    border: 1px solid #7e7b7b;
+    padding: 5% 5%;   
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px #000000;    
+}
+
+.sign-up-btn {
+    align-self: center;
+    width: 200px;
+}
+
+.avatar {
+    display: flex;
+    justify-content: space-between center;
+    align-items: center;
+    width: 73px;
+    height: 73px;
+}
+
+#avatar1 {
+    width: 120px;
+    height: 130px;
+    align-self: center;
+    background-image: url('/img/avatar1.png');
+    background-position-x: 157px;
+    background-position-y: 159px;
+}
+
+#avatar11 {
+    width: 53px;
+    height: 69px;
+    background-image: url('/img/avatar2.png');
+    background-position-x: 76px;
+    background-position-y: 81px;
+}
+
+#avatar2 {
+    width: 120px;
+    height: 130px;
+    align-self: center;
+    background-image: url('/img/avatar1.png');
+    background-position-x: 357px;
+    background-position-y: 159px;
+}
+
+#avatar22 {
+    width: 53px;
+    height: 69px;
+    background-image: url('/img/avatar2.png');
+    background-position-x: 176px;
+    background-position-y: 81px;
+}
+
+#avatar3 {
+    width: 120px;
+    height: 130px;
+    align-self: center;
+    background-image: url('/img/avatar1.png');
+    background-position-x: 560px;
+    background-position-y: 159px;
+}
+
+#avatar33 {
+    width: 53px;
+    height: 69px;
+    background-image: url('/img/avatar2.png');
+    background-position-x: 276px;
+    background-position-y: 81px;
+}
+
+#avatar4 {
+    width: 120px;
+    height: 130px;
+    align-self: center;
+    background-image: url('/img/avatar1.png');
+    background-position-x: 559px;
+    background-position-y: 347px;
+}
+
+#avatar44 {
+    width: 53px;
+    height: 69px;
+    background-image: url('/img/avatar2.png');
+    background-position-x: 276px;
+    background-position-y: 176px;
+}
+
+#avatar5 {
+    width: 120px;
+    height: 130px;
+    align-self: center;
+    background-image: url('/img/avatar1.png');
+    background-position-x: 559px;
+    background-position-y: 535px;
+}
+
+#avatar55 {
+    width: 53px;
+    height: 69px;
+    background-image: url('/img/avatar2.png');
+    background-position-x: 276px;
+    background-position-y: 270px;
+}
+
+#avatar6 {
+    width: 120px;
+    height: 130px;
+    align-self: center;
+    background-image: url('/img/avatar1.png');
+    background-position-x: 360px;
+    background-position-y: 535px;
+}
+
+#avatar66 {
+    width: 55px;
+    height: 69px;
+    background-image: url('/img/avatar2.png');
+    background-position-x: 177px;
+    background-position-y: 270px;
+}
+
+#avatar7 {
+    width: 120px;
+    height: 130px;
+    align-self: center;
+    background-image: url('/img/avatar1.png');
+    background-position-x: 159px;
+    background-position-y: 535px;
+}
+
+#avatar77 {
+    width: 55px;
+    height: 69px;
+    background-image: url('/img/avatar2.png');
+    background-position-x: 77px;
+    background-position-y: 270px;
+}
+
+#avatar8 {
+    width: 120px;
+    height: 130px;
+    align-self: center;
+    background-image: url('/img/avatar1.png');
+    background-position-x: 159px;
+    background-position-y: 347px;
+}
+
+#avatar88 {
+    width: 55px;
+    height: 69px;
+    background-image: url('/img/avatar2.png');
+    background-position-x: 77px;
+    background-position-y: 176px;
+}
+
+#avatar9 {
+    width: 120px;
+    height: 130px;
+    align-self: center;
+    background-image: url('/img/avatar1.png');
+    background-position-x: 361px;
+    background-position-y: 347px;
+}
+
+#avatar99 {
+    width: 55px;
+    height: 69px;
+    background-image: url('/img/avatar2.png');
+    background-position-x: 177px;
+    background-position-y: 176px;
+}
+
+#avatar10 {
+    width: 120px;
+    height: 130px;
+    align-self: center;
+    background-image: url('/img/avatar4.png');
+    background-position-x: 135px;
+    background-position-y: 129px;
+}
+
+#avatar100 {
+    width: 55px;
+    height: 69px;
+    background-image: url('/img/avatar3.png');
+    background-position-x: -17px;
+    background-position-y: -14px;
+}
+
+
+
+.avatar-c-m, .avatar-c-f {
+    display: none;
+    width: 67%;
+    flex-direction: row;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    align-self: center;
+    flex-wrap:  wrap;
+}
+
+.avatar-label {
+    align-self: flex-start;
+}

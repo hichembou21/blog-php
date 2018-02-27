@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href='//fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Update user</title>
+</head>
+<body>
+    
+    <section class="update-user container-col">
+        <h1 class="title"> welcome {{ user.username }} </h1>
+
+        <form class="form-sign-up container-col" action="{{path_for('updateuser')}}" method="post">
+            <fieldset class="form-group">
+            <div class="form-group row">
+                <label for="input-username" class="col-sm-2 col-form-label">Username</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="username" value="{{ user.username }}" placeholder="your surname" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="input-email" class="col-sm-2 col-form-label">Email</label>
+                <div class="input-group-prepend col-sm-6">
+                    <div class="input-group-text">{{ user.email }} </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="input-password" class="col-sm-2 col-form-label">Password</label>                
+                <div class="col-sm-6">
+                    <input type="password" class="form-control" name="password" value="{{ user.password }}" placeholder="Password" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="input-gender" class="col-sm-2 col-form-label">gender</label>                
+                <div class="col-sm-6">
+                    <select class="custom-select" name="gender" id="inputGroupSelect01">
+                        <option selected>Choose...</option>
+                        <option value="0" {% if user.gender == 0 %} selected {% endif %}>male</option>
+                        <option value="1" {% if user.gender == 1 %} selected {% endif %}>female</option>
+                        <option value="2" {% if user.gender == 2 %} selected {% endif %}>autre</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row avatar-c-m">
+                    <label for="input-avatar" class="avatar-label col-sm-2 col-form-label">Avatar</label>                      
+                    <div class="avatar"><div id="avatar11"></div><input type="radio" name="avatar" value="avatar1" {% if user.avatar == 'avatar1' %} checked {% endif %} aria-label="Radio button for following text input"></div>
+                    <div class="avatar"><div id="avatar22"></div><input type="radio" name="avatar" value="avatar2" {% if user.avatar == 'avatar2' %} checked {% endif %} aria-label="Radio button for following text input"></div>
+                    <div class="avatar"><div id="avatar33"></div><input type="radio" name="avatar" value="avatar3" {% if user.avatar == 'avatar3' %} checked {% endif %} aria-label="Radio button for following text input"></div>
+                    <div class="avatar"><div id="avatar44"></div><input type="radio" name="avatar" value="avatar4" {% if user.avatar == 'avatar4' %} checked {% endif %} aria-label="Radio button for following text input"></div>
+                    <div class="avatar"><div id="avatar55"></div><input type="radio" name="avatar" value="avatar5" {% if user.avatar == 'avatar5' %} checked {% endif %} aria-label="Radio button for following text input"></div>
+            </div>
+            <div class="form-group row avatar-c-f">
+                <label for="input-avatar" class="avatar-label col-sm-2 col-form-label">Avatar</label>                      
+                <div class="avatar"><div id="avatar66"></div><input type="radio" name="avatar" value="avatar6" {% if user.avatar == 'avatar6' %} checked {% endif %} aria-label="Radio button for following text input"></div>
+                <div class="avatar"><div id="avatar77"></div><input type="radio" name="avatar" value="avatar7" {% if user.avatar == 'avatar7' %} checked {% endif %} aria-label="Radio button for following text input"></div>
+                <div class="avatar"><div id="avatar88"></div><input type="radio" name="avatar" value="avatar8" {% if user.avatar == 'avatar8' %} checked {% endif %} aria-label="Radio button for following text input"></div>
+                <div class="avatar"><div id="avatar99"></div><input type="radio" name="avatar" value="avatar9" {% if user.avatar == 'avatar9' %} checked {% endif %} aria-label="Radio button for following text input"></div>
+                <div class="avatar"><div id="avatar100"></div><input type="radio" name="avatar" value="avatar10" {% if user.avatar == 'avatar10' %} checked {% endif %} aria-label="Radio button for following text input"></div>
+            </div>
+            </fieldset>
+            <button type="submit" class="btn btn-primary sign-up-btn">Sign in</button>
+        </form>
+    </section>
+
+    <script src="/script/app.js" type="text/javascript"></script>
+    
+</body>
+</html>
